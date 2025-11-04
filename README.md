@@ -28,6 +28,7 @@ dart run problems/011_container_with_most_water/solution.dart
 | # | Problem | Difficulty | Technique | Time Complexity | Space Complexity |
 |---|---------|-----------|-----------|-----------------|------------------|
 | 11 | [Container With Most Water](problems/011_container_with_most_water/README.md) | Medium | Two Pointers | O(n) | O(1) |
+| 167 | [Two Sum II - Input Array Is Sorted](problems/167_two_sum_ii/README.md) | Medium | Two Pointers | O(n) | O(1) |
 
 ## 🚀 Coding Interview Patterns Roadmap (7-Week Plan)
 
@@ -65,13 +66,13 @@ Each week focuses on **one pattern**, with time to:
 ---
 
 ### 🧭 Week 2 – Two Pointers
-**Progress:** `█░░ 1/3 (33%)`
+**Progress:** `██░ 2/3 (67%)`
 
 **Concept:** Use two indices moving at different speeds or from opposite directions to find pairs, midpoints, or partitions.  
 **When to Use:** Sorted arrays, linked lists, or problems involving pair matching and array modification.  
 
 **LeetCode Practice:**
-- [ ] [167. Two Sum II – Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+- [x] [167. Two Sum II – Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - [ ] [15. 3Sum](https://leetcode.com/problems/3sum/)
 - [x] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
