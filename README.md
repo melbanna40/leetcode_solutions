@@ -28,6 +28,7 @@ dart run problems/011_container_with_most_water/solution.dart
 | # | Problem | Difficulty | Technique | Time Complexity | Space Complexity |
 |---|---------|-----------|-----------|-----------------|------------------|
 | 11 | [Container With Most Water](problems/011_container_with_most_water/README.md) | Medium | Two Pointers | O(n) | O(1) |
+| 16 | [3Sum Closest](problems/016_3sum_closest/README.md) | Medium | Two Pointers | O(n²) | O(1) |
 | 167 | [Two Sum II - Input Array Is Sorted](problems/167_two_sum_ii/README.md) | Medium | Two Pointers | O(n) | O(1) |
 
 ## 🚀 Coding Interview Patterns Roadmap (7-Week Plan)
