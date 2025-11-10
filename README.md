@@ -67,15 +67,25 @@ Each week focuses on **one pattern**, with time to:
 ---
 
 ### 🧭 Week 2 – Two Pointers
-**Progress:** `██░ 2/3 (67%)`
+**Progress:** `███ 3/4 (75%)`
 
-**Concept:** Use two indices moving at different speeds or from opposite directions to find pairs, midpoints, or partitions.  
-**When to Use:** Sorted arrays, linked lists, or problems involving pair matching and array modification.  
+**Concept:** Use two indices moving at different speeds or from opposite directions to find pairs, midpoints, or partitions. **Key insights from solved problems:**
+- **Opposite ends pattern** (Problem 11): Start pointers at both ends, move based on limiting factor (shorter line limits water capacity)
+- **Sorted array pattern** (Problem 167): Exploit sorted property to make directional decisions—move left right for larger sum, right left for smaller sum
+- **Extended to triplets** (Problem 16): Fix one element, use two pointers for remaining pair—reduces O(n³) to O(n²)
+- **Space efficiency**: Achieve O(n) or O(n²) time with O(1) space, beating hash map solutions when sorted data is available
+
+**When to Use:** 
+- ✅ Sorted arrays (enables directional pointer movement)
+- ✅ Finding pairs/triplets that sum to target or closest to target
+- ✅ Optimizing area/volume calculations with constraints
+- ✅ Problems where you can eliminate possibilities by moving pointers
 
 **LeetCode Practice:**
-- [x] [167. Two Sum II – Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
-- [ ] [15. 3Sum](https://leetcode.com/problems/3sum/)
-- [x] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- [x] [167. Two Sum II – Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) - **Solved** ✓
+- [x] [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) - **Solved** ✓
+- [x] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) - **Solved** ✓
+- [ ] [15. 3Sum](https://leetcode.com/problems/3sum/) - Similar to 3Sum Closest, find exact triplets
 
 ---
 
