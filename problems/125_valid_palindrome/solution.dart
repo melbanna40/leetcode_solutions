@@ -104,4 +104,3 @@ void main() {
   developer.log('Result: $result7');
   print('Test 7: Is "$test7" a palindrome? $result7 (Expected: false)\n');
 }
-

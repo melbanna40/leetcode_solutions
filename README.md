@@ -30,6 +30,7 @@ dart run problems/011_container_with_most_water/solution.dart
 | 11 | [Container With Most Water](problems/011_container_with_most_water/README.md) | Medium | Two Pointers | O(n) | O(1) |
 | 16 | [3Sum Closest](problems/016_3sum_closest/README.md) | Medium | Two Pointers | O(n²) | O(1) |
 | 125 | [Valid Palindrome](problems/125_valid_palindrome/README.md) | Easy | Two Pointers | O(n) | O(n) |
+| 141 | [Linked List Cycle](problems/141_linked_list_cycle/README.md) | Easy | Fast & Slow Pointers | O(n) | O(1) |
 | 167 | [Two Sum II - Input Array Is Sorted](problems/167_two_sum_ii/README.md) | Medium | Two Pointers | O(n) | O(1) |
 
 ## 🚀 Coding Interview Patterns Roadmap (7-Week Plan)
@@ -132,15 +133,25 @@ Each week focuses on **one pattern**, with time to:
 ---
 
 ### 🌀 Week 6 – Fast & Slow Pointers
-**Progress:** `░░░ 0/3 (0%)`
+**Progress:** `█░░ 1/3 (33%)`
 
-**Concept:** Use two pointers with different speeds to detect cycles or locate midpoints.  
-**When to Use:** Linked list cycle detection, palindrome checking, or middle element finding.  
+**Concept:** Use two pointers with different speeds to detect cycles or locate midpoints. **Key insights from solved problems:**
+- **Floyd's Cycle Detection** (Problem 141): Tortoise and Hare algorithm—slow pointer moves 1 step, fast pointer moves 2 steps. If there's a cycle, they will meet (mathematically guaranteed)
+- **O(1) space advantage**: No need for hash sets or extra data structures—only two pointers needed
+- **Mathematical proof**: Fast pointer will catch up to slow pointer within one cycle length, making it O(n) time
+- **Null safety**: Always check `fast != null && fast.next != null` before accessing `fast.next.next`
+
+**When to Use:** 
+- ✅ Linked list cycle detection (this problem)
+- ✅ Finding the middle of a linked list
+- ✅ Finding kth node from the end
+- ✅ Problems involving linked list traversal with constraints
+- ✅ When O(1) space is required (better than hash set approach)
 
 **LeetCode Practice:**
-- [ ] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
-- [ ] [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
-- [ ] [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+- [x] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) - **Solved** ✓
+- [ ] [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) - Find where the cycle begins
+- [ ] [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) - Find the middle node
 
 ---
 
