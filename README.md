@@ -29,6 +29,7 @@ dart run problems/011_container_with_most_water/solution.dart
 |---|---------|-----------|-----------|-----------------|------------------|
 | 11 | [Container With Most Water](problems/011_container_with_most_water/README.md) | Medium | Two Pointers | O(n) | O(1) |
 | 16 | [3Sum Closest](problems/016_3sum_closest/README.md) | Medium | Two Pointers | O(n²) | O(1) |
+| 125 | [Valid Palindrome](problems/125_valid_palindrome/README.md) | Easy | Two Pointers | O(n) | O(n) |
 | 167 | [Two Sum II - Input Array Is Sorted](problems/167_two_sum_ii/README.md) | Medium | Two Pointers | O(n) | O(1) |
 
 ## 🚀 Coding Interview Patterns Roadmap (7-Week Plan)
@@ -67,25 +68,27 @@ Each week focuses on **one pattern**, with time to:
 ---
 
 ### 🧭 Week 2 – Two Pointers
-**Progress:** `███ 3/4 (75%)`
+**Progress:** `████ 4/4 (100%)`
 
 **Concept:** Use two indices moving at different speeds or from opposite directions to find pairs, midpoints, or partitions. **Key insights from solved problems:**
 - **Opposite ends pattern** (Problem 11): Start pointers at both ends, move based on limiting factor (shorter line limits water capacity)
 - **Sorted array pattern** (Problem 167): Exploit sorted property to make directional decisions—move left right for larger sum, right left for smaller sum
 - **Extended to triplets** (Problem 16): Fix one element, use two pointers for remaining pair—reduces O(n³) to O(n²)
-- **Space efficiency**: Achieve O(n) or O(n²) time with O(1) space, beating hash map solutions when sorted data is available
+- **Symmetry check pattern** (Problem 125): Compare characters from both ends moving towards center—perfect for palindrome validation
+- **Space efficiency**: Achieve O(n) or O(n²) time with O(1) space in most cases, beating hash map solutions when sorted data is available
 
 **When to Use:** 
 - ✅ Sorted arrays (enables directional pointer movement)
 - ✅ Finding pairs/triplets that sum to target or closest to target
 - ✅ Optimizing area/volume calculations with constraints
+- ✅ Checking symmetry/palindromes (compare from both ends)
 - ✅ Problems where you can eliminate possibilities by moving pointers
 
 **LeetCode Practice:**
 - [x] [167. Two Sum II – Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) - **Solved** ✓
 - [x] [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) - **Solved** ✓
 - [x] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) - **Solved** ✓
-- [ ] [15. 3Sum](https://leetcode.com/problems/3sum/) - Similar to 3Sum Closest, find exact triplets
+- [x] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) - **Solved** ✓
 
 ---
 
